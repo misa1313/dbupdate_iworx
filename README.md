@@ -21,3 +21,5 @@ Select the proper MYSQL/MariaDB version:
 ## Features:
 
 The script will first check the SQL mode to set it explicitly in the my.cnf file (if it's not already there), then it will check for corruption, dump all the databases, back up the data dir, and lastly proceed with the upgrade. The script will be automatically stopped if an issue is detected during the backup or upgrade process.
+Can be executed directly with the following command via SSH:
+```bash <(curl -s https://repo.stardustziggy.com/dbupdate_iworx.sh)```
